@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+/* Common container */
+.main-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    padding-top: 1.8rem;
+}
+
+
+/* Section Presentation */
+#presentation{
+    background-color: #DCC7BA;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+}
+
+.presentation-header{
+    background-image: url('../img/header.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 80% 80%;
+    height: 15.8rem;
+    width: 100%;
+}
+
+.presentation-title{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 0.5rem;
+    width: 22.2rem;
+}
+
+.presentation-title h1{
+    font-size: 4rem;
+    line-height: 3.4rem;
+    text-align: right;
+}
+
+.presentation-title h3{
+    font-size: 2rem;
+    line-height: 1.8rem;
+}
+
+.presentation-title h1,
+.presentation-title h3{
+    text-shadow: 0.4rem 0.4rem 0.3rem #00000064;
+}
+
+.presentation-comment{
+    display: flex;
+    padding: 0.9rem 1.5rem;
+    background-color: #be8a6d80;
+    font-size: 1.8rem;
+    line-height: 2rem;
+    border-radius: 1.5rem;
+    width: 34.8rem;
+    box-shadow: 0.4rem 0.4rem 0.8rem #00000064;
+}
+
+.presentation-img{
+    width: 100%;
+    height: 30.5rem;
+    background-image: url('../img/book_on_table2.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 80% 80%;
+}
