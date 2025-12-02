@@ -66,10 +66,10 @@ html{
     display: flex;
     padding: 0.9rem 1.5rem;
     background-color: #be8a6d80;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     line-height: 2rem;
     border-radius: 1.5rem;
-    width: 34.8rem;
+    width: 31.8rem;
     box-shadow: 0.4rem 0.4rem 0.8rem #00000064;
 }
 
@@ -80,4 +80,8 @@ html{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 80% 80%;
+}
+
+@media screen and (min-width: 768px) {
+
 }
