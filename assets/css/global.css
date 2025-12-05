@@ -17,6 +17,7 @@ html{
     align-items: center;
     height: 100%;
     padding-top: 1.8rem;
+    max-width: 80rem;
 }
 
 
@@ -38,6 +39,16 @@ html{
     width: 100%;
 }
 
+.presentation-title-container{
+    display: flex;
+    align-items: center;
+}
+
+.presentation-title-container img{
+    display: none;
+    height: 14.1rem;
+}
+
 .presentation-title{
     display: flex;
     flex-direction: column;
@@ -52,14 +63,20 @@ html{
     text-align: right;
 }
 
-.presentation-title h3{
+.presentation-title h2{
     font-size: 2rem;
     line-height: 1.8rem;
 }
 
 .presentation-title h1,
-.presentation-title h3{
+.presentation-title h2{
     text-shadow: 0.4rem 0.4rem 0.3rem #00000064;
+}
+
+.presentation-comments-container{
+    display: flex;
+    flex-direction: column;
+    gap: 1.9rem
 }
 
 .presentation-comment{
@@ -73,6 +90,10 @@ html{
     box-shadow: 0.4rem 0.4rem 0.8rem #00000064;
 }
 
+.presentation-comment p{
+    text-align: justify;
+}
+
 .presentation-img{
     width: 100%;
     height: 30.5rem;
@@ -80,6 +101,10 @@ html{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 80% 80%;
+}
+
+.presentation-img-alternative{
+    display: none;
 }
 
 /* Adjusting in case of screen rotation */
@@ -99,10 +124,92 @@ html{
     }
 }
 
-/* For smaller screens (maximum 375px) */
+/* Smaller screens (maximum 375px) */
 @media screen and (max-width: 375px){
     .presentation-comment{
         font-size: 1.4rem;
         line-height: 1.6rem;
     }
+}
+
+/* Smaller tablets */
+@media screen and (min-width: 768px) {
+    .presentation-header{
+        height: 28.2rem;
+    }
+
+    .presentation-title-container{
+        width: 43rem;
+        justify-content: space-between;
+    }
+
+    .presentation-title-container img{
+        display: block;
+        filter: drop-shadow(0.8rem 0.8rem 0.8rem #00000064);
+    }
+
+    .presentation-title h1{
+        font-size: 5rem;
+        line-height: 4.3rem;
+        width: 26.4rem;
+    }
+
+    .presentation-title h2{
+        font-size: 2.8rem;
+        line-height: 2.8rem;
+    }
+
+    .presentation-comments-container{
+        width: 55.4rem;
+        justify-content: space-between;
+        height: 19rem;
+    }
+
+    .presentation-comment{
+        width: 100%;
+        box-shadow: 0.8rem 0.8rem 0.8rem #00000064;
+    }
+
+    .presentation-comment p{
+        font-size: 2.2rem;
+        line-height: 2.3rem;
+    }
+
+    .main-container{
+        height: calc(100% - 28.2rem);
+        padding-top: 4rem;
+    }
+
+    .presentation-img{
+        background-size: 71%;
+        background-position: 0% 0%;
+    }
+}
+
+/* Higher tablets */
+@media screen and (min-width: 820px) {
+    #presentation{
+        align-items: center;
+    }
+
+    .presentation-img{
+        display: none;
+    }
+
+    .main-container{
+        justify-content: flex-start;
+        gap: 6rem;
+    }
+
+    .presentation-img-alternative{
+        display: block;
+        width: 100%;
+        height: 50rem;
+        background-image: url('../img/book_on_table2.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 80% 80%;
+        align-self: flex-start;
+    }
+
 }
